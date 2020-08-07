@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Dog Breeds Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header class="row bg-secondary">
+      <div class="col-sm-3">
+        <a href="./highscore.html">highscore</a>
+      </div>
+      <div class="col-sm-6">
+        <h1>Dog Breeds Quiz</h1>
+
+      </div>
+      <div class="col-sm-3">
+        <div id="time"></div>
+      </div>
+    </header>
+    <div id="homePage">
+      <div class="wrapper">
+        
+        <div class="card">
+          <div class="card-header">
+            <h2>Click "Start" To Begin Quiz</h2>
+          </div>
+          <div class="card-footer">
+            <button id="start" class="btn">Start</button>
+          </div>
+          <div class=bg-dogs>
+            <img src="assets/dog1.png" alt="German Shephard" width="300" style="float:left">
+            <img src="assets/dog2.png" alt="Golden Retriever" width="300" style="float:right">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div id="quizPage" class="d-none">
+      <div class="wrapper m-4">
+
+        <div class="card">
+          <div class="card-header">
+            <h2>Question</h2>
+            <div id="question"></div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+    <!-- <div id="highScores">
+    <header>
+      <h1>High Scores</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Leaderboard</h2>
+      </div>
+      <div class="card-footer">
+        <button id="generate" class="btn">Play Again</button>
+        <button id="generate" class="btn">Clear Leaderboard</button>
+      </div>
+    </div>
+  </div> -->
+  <script src="./questions.js"></script>
+    <script src="script.js"></script>
+
+  </div>
+  </div>
+</body>
+
+</html>

@@ -3,9 +3,10 @@ var homepage = document.querySelector("#homePage")
 var quizPage = document.querySelector("#quizPage")
 var timerEl = document.querySelector("#time")
 var currentQuestion = 0
-var secondsLeft = 30
+var secondsLeft = 60
 var theTimer
 
+//Timer controls
 function timer (){
     theTimer = setInterval(function(){
         secondsLeft--
@@ -17,6 +18,7 @@ function timer (){
     },1000)
 }
 
+//Change page to the quiz
 function displayQuestion() {
     var questionEl = document.querySelector("#question")
     questionEl.textContent = questions[currentQuestion].question
@@ -31,6 +33,7 @@ function displayQuestion() {
     }
 }
 
+//Hide Homepage
 function init(){
     homepage.setAttribute('class','d-none')
     quizPage.classList.remove("d-none")
@@ -39,6 +42,7 @@ function init(){
     displayQuestion()
 }
 
+//Process given answer and check for accuracy, end of loop
 function checkAnswer(){
     if(!event.target.classList.contains('answer')) return
     console.log(event.target.value, questions[currentQuestion].correctAnswer )
